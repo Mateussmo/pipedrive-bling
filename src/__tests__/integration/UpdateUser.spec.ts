@@ -42,7 +42,6 @@ describe('Update Users', () => {
       .set('Authorization', `Bearer ${userToken}`)
       .send({
         password: '12345678',
-        mobileToken: '55555555555',
       });
     expect(response.status).toBe(201);
   });
@@ -79,9 +78,7 @@ describe('Update Users', () => {
     const response = await request(app)
       .patch('/users')
       .set('Authorization', `Bearer ${userToken}`)
-      .send({
-        mobileToken: '55555555555',
-      });
+      .send({});
     expect(response.status).toBe(422);
   });
 });

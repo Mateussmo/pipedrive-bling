@@ -28,7 +28,6 @@ describe('Authenticate Users', () => {
     await request(app).post('/users').send({
       username: 'mateusmoreirav',
       password: '12345678',
-      mobileToken: '55555555555',
     });
     const response = await request(app).post('/users/authenticate').send({
       username: 'mateusmoreirav',
@@ -40,7 +39,6 @@ describe('Authenticate Users', () => {
     await request(app).post('/users').send({
       username: 'mateusmoreirav',
       password: '12345678',
-      mobileToken: '55555555555',
     });
     const response = await request(app).post('/users/authenticate').send({
       password: '12345678',
@@ -51,7 +49,6 @@ describe('Authenticate Users', () => {
     await request(app).post('/users').send({
       username: 'mateusmoreirav',
       password: '12345678',
-      mobileToken: '55555555555',
     });
     const response = await request(app).post('/users/authenticate').send({
       username: 'mateusmoreirav',

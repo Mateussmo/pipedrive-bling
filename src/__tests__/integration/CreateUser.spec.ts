@@ -28,7 +28,6 @@ describe('Create Users', () => {
     const response = await request(app).post('/users').send({
       username: 'mateusmoreirav',
       password: '12345678',
-      mobileToken: '55555555555',
     });
     expect(response.status).toBe(201);
   });
