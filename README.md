@@ -81,4 +81,4 @@ BLING_API_KEY=Your Api Key in Bling
 
 | Authenticated Route? | Method | Route Name | Request body |
 | -------------------- | ------ | ---------- | ------------ |
-| Yes                  | POST   | /deals     |              |
+| Yes                  | GET    | /deals     |              |
