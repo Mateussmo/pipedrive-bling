@@ -82,3 +82,20 @@ BLING_API_KEY=Your Api Key in Bling
 | Authenticated Route? | Method | Route Name | Request body |
 | -------------------- | ------ | ---------- | ------------ |
 | Yes                  | GET    | /deals     |              |
+
+
+
+
+### CI/CD
+
+It was configured the application's ci/cd, for that it was used the Google Cloud Build: https://cloud.google.com/cloud-build
+
+![image](https://user-images.githubusercontent.com/26530039/104127931-93a65d80-5343-11eb-9535-e5f78bc67bda.png)
+
+And to deploy the application it was used Watchtower: https://github.com/containrrr/watchtower
+
+![image](https://user-images.githubusercontent.com/26530039/104127980-cc463700-5343-11eb-8074-70169d2bf455.png)
+
+And to management the images it was used google compute engine: https://cloud.google.com/compute
+
+Feel free to do a PR and see the change automatically.
