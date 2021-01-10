@@ -59,7 +59,7 @@ class DealsController {
   ): Promise<Response> {
     const findAllDeals = new FindAllDealsService();
     const deals = await findAllDeals.execute();
-    return response.status(200).json({ deals: 'test1e' });
+    return response.status(200).json({ deals: 'test' });
   }
 }
 
